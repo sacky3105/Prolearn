@@ -1,0 +1,35 @@
+name: "機能リクエスト"
+about: "機能追加や改善提案用のテンプレート"
+title: ""
+labels: enhancement
+assignees: ""
+
+body:
+  - type: textarea
+    id: overview
+    attributes:
+      label: 概要
+      description: 追加したい機能や改善点の概要を記載してください
+      placeholder: 機能や改善点の概要
+
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景
+      description: なぜこの機能が必要なのか、背景情報を記載してください
+      placeholder: 背景情報
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 提案内容
+      description: 具体的な提案内容を記載してください
+      placeholder: 提案内容
+
+  - type: textarea
+    id: others
+    attributes:
+      label: その他
+      description: 追加の情報があれば記載してください
+      placeholder: 追加情報
+
