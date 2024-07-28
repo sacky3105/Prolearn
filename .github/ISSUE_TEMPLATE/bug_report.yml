@@ -1,55 +1,41 @@
-name: "バグ報告"
-about: "バグの報告用テンプレート"
-title: ""
-labels: bug
-assignees: ""
+name: バグ報告
+description: バグの報告用テンプレート
+title: "[BUG] タイトルを入力してください"
+labels: ["bug"]
+assignees: []
 
 body:
-  - type: textarea
-    id: summary
+  - type: markdown
     attributes:
-      label: 概要
-      description: バグの概要を簡潔に説明してください
-      placeholder: バグの概要
+      value: |
+        ## 概要
 
-  - type: textarea
-    id: steps
-    attributes:
-      label: 再現手順
-      description: バグを再現する手順を記載してください
-      placeholder: |
+        バグの概要を簡潔に説明してください。
+
+        ## 再現手順
+
+        バグを再現する手順を記載してください。
+
         1. 手順1
         2. 手順2
         3. 手順3
 
-  - type: textarea
-    id: expected
-    attributes:
-      label: 期待される動作
-      description: 本来期待される動作を記載してください
-      placeholder: 期待される動作
+        ## 期待される動作
 
-  - type: textarea
-    id: screenshot
-    attributes:
-      label: スクリーンショット
-      description: 可能であれば、問題のスクリーンショットを添付してください
-      placeholder: スクリーンショット
+        本来期待される動作を記載してください。
 
-  - type: input
-    id: environment
-    attributes:
-      label: 環境
-      description: 使用しているOSやブラウザの情報を記載してください
-      placeholder: |
+        ## スクリーンショット
+
+        可能であれば、問題のスクリーンショットを添付してください。
+
+        ## 環境
+
         - OS: [e.g. Windows 10]
         - ブラウザ: [e.g. Chrome 89]
         - バージョン: [e.g. 1.0.0]
 
-  - type: textarea
-    id: others
-    attributes:
-      label: その他
-      description: 追加の情報があれば記載してください
-      placeholder: 追加情報
+        ## その他
+
+        追加の情報があれば記載してください。
+
 
