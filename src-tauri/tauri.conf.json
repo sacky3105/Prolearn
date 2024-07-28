@@ -1,0 +1,16 @@
+{
+  "build": {
+    "distDir": "../frontend/build",
+    "devPath": "http://localhost:3000"
+  },
+  "tauri": {
+    "windows": [
+      {
+        "title": "ProLearn",
+        "width": 800,
+        "height": 600
+      }
+    ]
+  }
+}
+
