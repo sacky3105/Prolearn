@@ -1,50 +1,45 @@
-name: "プルリクエストテンプレート"
-about: "変更の概要と目的を記載します"
-title: ""
-labels: ""
-assignees: ""
+name: プルリクエストテンプレート
+description: プルリクエストの概要と詳細を記載するテンプレート
+title: "[PR] タイトルを入力してください"
+labels: []
+assignees: []
 
 body:
-  - type: textarea
-    id: overview
+  - type: input
+    id: pr-overview
     attributes:
       label: 概要
-      description: 変更の概要を記載してください
-      placeholder: 変更の概要
+      description: このプルリクエストの概要を記載してください。変更内容や目的を簡潔に説明します。
+      placeholder: 概要を入力してください
+    validations:
+      required: true
 
-  - type: textarea
-    id: changes
+  - type: markdown
     attributes:
-      label: 変更点
-      description: 変更内容をリスト形式で記載してください
-      placeholder: |
+      value: |
+        ## 変更点
+
         - 変更点1の説明
         - 変更点2の説明
         - 変更点3の説明
 
-  - type: textarea
-    id: test_procedures
-    attributes:
-      label: テスト手順
-      description: 変更点を確認するためのテスト手順を記載してください
-      placeholder: |
-        1. 手順1
-        2. 手順2
-        3. 手順3
+        ## テスト手順
 
-  - type: textarea
-    id: related_issues
-    attributes:
-      label: 関連するIssue
-      description: 関連するIssueがあれば、そのリンクを記載してください
-      placeholder: |
+        変更点を確認するためのテスト手順を記載してください。
+
+        1. 手順1の説明
+        2. 手順2の説明
+        3. 手順3の説明
+
+        ## 関連するIssue
+
+        関連するIssueがあれば、そのリンクを記載してください。
+
         - Issue 1: [リンク](#)
         - Issue 2: [リンク](#)
 
-  - type: textarea
-    id: others
-    attributes:
-      label: その他
-      description: 追加の情報や注意点があれば記載してください
-      placeholder: 追加情報
+        ## その他
+
+        追加の情報や注意点があれば記載してください。
+
 

@@ -1,35 +1,41 @@
-name: "機能リクエスト"
-about: "機能追加や改善提案用のテンプレート"
-title: ""
-labels: enhancement
-assignees: ""
+name: 機能リクエスト
+description: 機能追加や改善提案用のテンプレート
+title: "[FEATURE] タイトルを入力してください"
+labels: ["enhancement"]
+assignees: []
 
 body:
-  - type: textarea
+  - type: input
     id: overview
     attributes:
       label: 概要
       description: 追加したい機能や改善点の概要を記載してください
-      placeholder: 機能や改善点の概要
+      placeholder: 概要を入力してください
+    validations:
+      required: true
 
   - type: textarea
     id: background
     attributes:
       label: 背景
       description: なぜこの機能が必要なのか、背景情報を記載してください
-      placeholder: 背景情報
+      placeholder: 背景を入力してください
+    validations:
+      required: true
 
   - type: textarea
     id: proposal
     attributes:
       label: 提案内容
       description: 具体的な提案内容を記載してください
-      placeholder: 提案内容
+      placeholder: 提案内容を入力してください
+    validations:
+      required: true
 
   - type: textarea
-    id: others
+    id: additional-information
     attributes:
       label: その他
       description: 追加の情報があれば記載してください
-      placeholder: 追加情報
+      placeholder: その他の情報を入力してください
 

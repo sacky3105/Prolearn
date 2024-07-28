@@ -5,37 +5,48 @@ labels: ["bug"]
 assignees: []
 
 body:
-  - type: markdown
+  - type: input
+    id: overview
     attributes:
-      value: |
-        ## 概要
+      label: 概要
+      description: バグの概要を簡潔に説明してください
+      placeholder: 概要を入力してください
+    validations:
+      required: true
 
-        バグの概要を簡潔に説明してください。
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: 再現手順
+      description: バグを再現する手順を記載してください
+      placeholder: 1. 手順1\n2. 手順2\n3. 手順3
+    validations:
+      required: true
 
-        ## 再現手順
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 期待される動作
+      description: 本来期待される動作を記載してください
+      placeholder: 期待される動作を入力してください
+    validations:
+      required: true
 
-        バグを再現する手順を記載してください。
+  - type: input
+    id: environment
+    attributes:
+      label: 環境
+      description: 使用しているOSやブラウザのバージョンを記載してください
+      placeholder: 例: Windows 10, Chrome 89
+    validations:
+      required: true
 
-        1. 手順1
-        2. 手順2
-        3. 手順3
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: その他
+      description: 追加の情報があれば記載してください
+      placeholder: その他の情報を入力してください
 
-        ## 期待される動作
-
-        本来期待される動作を記載してください。
-
-        ## スクリーンショット
-
-        可能であれば、問題のスクリーンショットを添付してください。
-
-        ## 環境
-
-        - OS: [e.g. Windows 10]
-        - ブラウザ: [e.g. Chrome 89]
-        - バージョン: [e.g. 1.0.0]
-
-        ## その他
-
-        追加の情報があれば記載してください。
 
 
