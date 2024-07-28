@@ -1,7 +1,8 @@
-use super::super::schema::users;
-use serde::Deserialize;
+use crate::schema::users;
+use serde::{Deserialize, Serialize};
+use diesel::{Queryable, Insertable};
 
-#[derive(Queryable, Insertable, Debug, Deserialize)]
+#[derive(Queryable, Insertable, Debug, Deserialize, Serialize)]
 #[table_name = "users"]
 pub struct User {
     pub id: i32,

@@ -3,7 +3,7 @@ use diesel::r2d2::{self, ConnectionManager};
 use actix_web::{web, HttpResponse, post};
 use serde::Deserialize;
 use std::env;
-use create::models::user::User;  // ユーザーモデルのインポート
+use crate::models::user::User;  // ユーザーモデルのインポート
 
 type DbPool = r2d2::Pool<ConnectionManager<PgConnection>>;
 
@@ -15,7 +15,7 @@ struct NewUser {
 
 #[post("/create_user")]
 async fn create_user(pool: web::Data<DbPool>, user: web::Json<NewUser>) -> HttpResponse {
-    use create::schema::users::dsl::*;
+    use crate::schema::users::dsl::*;
 
     let conn = pool.get().expect("couldn't get db connection from pool");
 

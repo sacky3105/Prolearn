@@ -1,0 +1,59 @@
+name: エラーおよび警告修正
+description: コード内のエラーや警告を報告し、修正を提案するためのテンプレート
+title: "[FIX] エラー/警告のタイトル"
+labels: ["error", "warning"]
+assignees: []
+
+body:
+  - type: input
+    id: fix-title
+    attributes:
+      label: エラー/警告のタイトル
+      description: エラーや警告の概要を簡潔に記述してください
+      placeholder: エラーや警告のタイトルを入力してください
+    validations:
+      required: true
+
+  - type: textarea
+    id: fix-description
+    attributes:
+      label: 詳細な説明
+      description: エラーや警告の詳細を記述してください（エラーメッセージ、発生箇所、再現手順など）
+      placeholder: 詳細な説明を入力してください
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: 再現手順
+      description: エラーや警告を再現する手順を記載してください
+      placeholder: |
+        1. 手順1
+        2. 手順2
+        3. 手順3
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: 環境
+      description: 使用しているOSやブラウザ、その他の環境情報を記載してください
+      placeholder: 例: Windows 10, Chrome 89
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: 提案された解決策
+      description: エラーや警告を修正するための提案された解決策を記載してください
+      placeholder: 提案された解決策を入力してください
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: その他の情報
+      description: 追加の情報があれば記載してください
+      placeholder: その他の情報を入力してください
