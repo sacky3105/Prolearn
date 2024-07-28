@@ -1,0 +1,34 @@
+.editor-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .editor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .language-selector {
+    color: #ffffff;
+    background-color: #333333;
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  /* モバイル用スタイル */
+@media (max-width: 768px) {
+    .language-selector {
+      font-size: 12px;
+      padding: 4px;
+    }
+  }
+  
+  .editor {
+    flex: 1;
+    overflow: hidden;
+  }
