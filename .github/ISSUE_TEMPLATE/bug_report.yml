@@ -40,7 +40,7 @@ body:
     attributes:
       label: 環境
       description: 使用しているOSやブラウザのバージョンを記載してください
-      placeholder: 例: Windows 10, Chrome 89
+      placeholder: 例. Windows 10, Chrome 89
     validations:
       required: true
 
