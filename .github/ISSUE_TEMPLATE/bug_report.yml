@@ -19,7 +19,10 @@ body:
     attributes:
       label: 再現手順
       description: バグを再現する手順を記載してください
-      placeholder: 1. 手順1\n2. 手順2\n3. 手順3
+      placeholder: |
+        1. 手順1
+        2. 手順2
+        3. 手順3
     validations:
       required: true
 
@@ -47,6 +50,7 @@ body:
       label: その他
       description: 追加の情報があれば記載してください
       placeholder: その他の情報を入力してください
+
 
 
 
